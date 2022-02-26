@@ -64,6 +64,8 @@ Install dependencies
 
 **Database:** MongoDB
 
+**Authentication:** JWT
+
 
 
 
