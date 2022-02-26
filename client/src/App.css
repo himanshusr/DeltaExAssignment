@@ -1,0 +1,372 @@
+/* Global Styles */
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+/* Text Styles*/
+
+/* My Edited Styles */
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  border-radius: 2rem;
+}
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Forms */
+.form .form-group {
+  margin: 1.2rem 0;
+}
+
+.form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type='submit'],
+button {
+  font: inherit;
+}
+
+.logout-button {
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.team-member-heading {
+  display: inline-block;
+  margin: 10px;
+  padding: 0%;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.add-team-member-button {
+  background-color: #24a0ed;
+  color: white;
+  margin-top: 0px;
+  vertical-align: middle;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 15px;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dcdcdc;
+}
+
+.whole-dashboard {
+  margin: 32px;
+}
+
+/* Modal form */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+/*define the modal-content background*/
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+/*define the close button*/
+
+.close {
+  float: right;
+  top: 0px;
+  right: 10px;
+  color: grey;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+/*define the close hover and focus effects*/
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.clearfix {
+  justify-content: right;
+  align-items: right;
+  display: flex;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+}
+.cancel-team-member-button {
+  color: #24a0ed;
+  background-color: white;
+  border: 1px solid #24a0ed;
+}
+.add-member-fields {
+  width: 80%;
+}
+
+.delete-icon {
+  border: none; /* Remove borders */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer;
+}
+
+hr {
+  background-color: gray;
+  height: 2px;
+  margin-top: 15px;
+}
+
+.filter-sort {
+  margin: 10px;
+}
+
+/* Dropdown check list */
+
+.dropdown-check-list {
+  display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 20px 5px 10px;
+  border: 1px solid #ccc;
+  margin: 15px 15px 0px 15px;
+  margin-right: 40px;
+  height: 40px;
+}
+
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: '';
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 2px;
+  right: 10px;
+  top: 38%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+  margin: 5px;
+}
+.dropdown-check-list ul.items li input {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
+/* Select styling */
+
+select {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: white; /* Fallback color if gradients are not supported */
+
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #aaa;
+
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  padding: 5px;
+  right: 10px;
+  height: 40px;
+}
+
+option {
+  border-radius: 0px;
+}
