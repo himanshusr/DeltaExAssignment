@@ -9,7 +9,7 @@ http://singhrao-team-members.herokuapp.com/
 
 
 
-## Features of this app
+## Features of this app/ Points covered
 
 - ADD & DELETE Records
 - Records are sortable by status
